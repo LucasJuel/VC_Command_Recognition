@@ -22,14 +22,14 @@ int main(){
     if(numDevices < 0){
         cerr << Pa_GetErrorText(numDevices) << endl;
         return 1;
-    } else if(numDevices = 0){
+    } else if(numDevices == 0){
         cout << "No devides available on this machine." << endl;
         return 1;
     }
 
 
     for(int i = 0; i < numDevices; i++){
-        
+        cout << "lol" << endl;
     }   
 
     err = Pa_Terminate();
