@@ -1,8 +1,7 @@
----
-title: VC_Command_Recognition
-author: Lucas Sjøstrøm
-date: today;
----
+
+# Title: VC_Command_Recognition
+# Author: Lucas Sjøstrøm
+
 
 ## Updates: 
 - 12/04 - finished tutorial on voice detection.
