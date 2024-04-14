@@ -2,6 +2,7 @@
 #include <string>
 #include <cstring>
 #include <portaudio.h>
+#include <pocketsphinx.h>
 
 using namespace std;
 
@@ -50,10 +51,13 @@ static int patestCallBack(
             printf(" ");
         }
     }
-
     fflush(stdout);
 
-    return 0;
+    ps_decoder_t* ps;
+
+    ps_process_raw(ps, (int16_t*)inputBuffer, framesPerBuffer, false, false);
+
+    return paContinue;
 }
 
 int main(){
@@ -126,7 +130,6 @@ int main(){
     checkErr(err);
     err = Pa_Terminate();
     checkErr(err);
-
 
     return EXIT_SUCCESS;
 }

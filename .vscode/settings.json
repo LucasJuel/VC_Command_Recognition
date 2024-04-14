@@ -3,6 +3,8 @@
         "xstring": "cpp",
         "string": "cpp",
         "iostream": "cpp",
-        "ostream": "cpp"
-    }
+        "ostream": "cpp",
+        "prim_type.h": "c"
+    },
+    "cmake.sourceDirectory": "F:/c++/lib/pocketsphinx"
 }
